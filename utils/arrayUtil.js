@@ -21,8 +21,6 @@ const contains = (arr1, arr2) => {
 }
 
 const notContains = (arr1, arr2) => {
-  if(arr2.length > arr1.length) return false
-
   let i=0, end=arr2.length
   for(; i<end; i++) {
     if(arr1.includes(arr2[i])) return false

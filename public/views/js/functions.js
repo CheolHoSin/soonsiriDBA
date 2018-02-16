@@ -28,7 +28,6 @@ function arrContains(arr1, arr2) {
 
 /* if arr1 not contains arr2, returns true. or Returns false */
 function arrNotContains(arr1, arr2) {
-  if (arr1.length < arr2.length) return false
   let elm, end=arr2.length
   for (elm of arr2) {
     if (arr1.includes(elm)) return false
