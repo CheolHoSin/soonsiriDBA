@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/public/views/css/bluehouse.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script type='text/javascript' src='/public/views/js/constants.js'></script>
+    <script type='text/javascript' src='/public/views/js/functions.js'></script>
+  </head>
+  <body>
+    <div id="app">
+      <test-component
+        v-bind:component-disabled="componentDisabled"
+        v-on:clicktest="test"
+        v-bind:result="result">
+      </test-component>
+      <filter-group
+        v-bind:filter="tags"
+        v-bind:button-class="'ysm-button'"
+        v-bind:component-disabled="componentDisabled"
+        v-on:clicktag="changeFilter">
+      </filter-group>
+      <filter-group
+        v-bind:filter="excepts"
+        v-bind:button-class="'ysm-cancel-button'"
+        v-bind:component-disabled="componentDisabled"
+        v-on:clicktag="changeExcepts">
+      </filter-group>
+      <foods-component
+        v-bind:foods="filteredFoods"
+        v-on:clicktag="onClickTag"
+        v-on:modifyname="onModifyName"
+        v-on:modifymsg="onModifyMsg"
+        v-on:clickdelete="onClickDelete"
+        v-on:clickcreate="onClickCreate"
+        v-bind:component-disabled="componentDisabled">
+      </foods-component>
+      <button class="ysm-cancel-button" v-bind:disabled="componentDisabled" v-on:click="revert()">작업내역 리셋</button>
+      <button class="ysm-button" v-bind:disabled="componentDisabled" v-on:click="commit()">작업내역 반영</button>
+    </div>
+    <script type="text/javascript" src="/public/views/js/bluehouse.js"></script>
+  </body>
+</html>

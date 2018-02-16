@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+  <script type='text/javascript' src='/public/views/js/constants.js'></script>
+  <script type='text/javascript' src='/public/views/js/functions.js'></script>
+  <script type='text/javascript' src='/public/views/js/login.js'></script>
+  <body>
+    <form id='loginform' method='post' action='/login' onsubmit='return false'>
+      <p><input id='userid' type='text' name='userid' placeholder='아이디' required>
+      <p><input id='password' type='password' name='password' placeholder='비밀번호' required>
+      <p><button type='submit' onclick='login()'>로그인</button>
+    </form>
+  </body>
+</html>

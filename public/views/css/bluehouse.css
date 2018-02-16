@@ -1,0 +1,129 @@
+.ysm-button {
+  background-color: #3399ff;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 12px 16px;
+  margin: 2px 2px;
+}
+
+.ysm-button:hover, .ysm-button:active {
+  background-color: #99ccff;
+  cursor: pointer;
+}
+
+.ysm-button:disabled {
+  background-color: #3399ff;
+}
+
+.ysm-cancel-button {
+  background-color: #b30000;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 12px 16px;
+  margin: 2px 2px;
+}
+
+.ysm-cancel-button:hover, .ysm-cancel-button:active {
+  background-color: #e60000;
+  cursor: pointer;
+}
+
+.ysm-cancel-button:disabled {
+  background-color: #b30000;
+}
+
+.ysm-button-disabled {
+  background-color: #b8b894;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 12px 16px;
+  margin: 2px 2px;
+}
+
+.ysm-button-disabled:hover, .ysm-button-disabled:active {
+  background-color: #ebebe0;
+  cursor: pointer;
+}
+
+.ysm-button-disabled:disabled {
+  background-color: #b8b894;
+}
+
+.ysm-foods-table {
+  width: 100%;
+  min-width: 800px;
+}
+
+.ysm-foods-table, .ysm-foods-table th, .ysm-foods-table td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.ysm-foods-table th, .ysm-foods-table td {
+  font-size: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.ysm-foods-theader1 {
+  width: 10%;
+}
+
+.ysm-foods-theader2 {
+  width: 30%;
+}
+
+.ysm-foods-theader3 {
+  width: 50%;
+}
+
+.ysm-foods-theader4 {
+  width: 10%;
+}
+
+.ysm-foods-tcol1 {
+  width: 10%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.ysm-foods-tcol2 {
+  width: 30%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.ysm-foods-tcol3 {
+  width: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.ysm-foods-tcol4 {
+  width: 10%;
+  text-align: center;
+}
+
+.ysm-foods-textinput {
+  font-size: 16px;
+  border: none;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.ysm-foods-buttongroup {
+  width: 100%;
+}
+.ysm-foods-buttongroup div {
+  margin: 10px;
+  float: right;
+}
